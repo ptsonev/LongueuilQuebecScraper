@@ -29,11 +29,12 @@ python main.py
 
 # Proxy
 
-The website doesn't have any anti-scraping protection.
-But if you want you can add rotating proxy in LongueuilQuebecScraper/settings.py
-set HTTPPROXY_ENABLED = True and HTTP_PROXY = 'http://username:password@host:port
+The website doesn't have any anti-scraping protection. 
+However, if you wish, you can add a rotating proxy.
+In LongueuilQuebecScraper/settings.py
+Set HTTPPROXY_ENABLED = True and HTTP_PROXY = 'http://username:password@host:port'.
 
 # Caching
 
-The caching is enabled, that way you can run the scraper over multiple session and it won't redownload the same records.
-However, it isn't checking for duplicates, so delete the data.csv file each time you run it.
+Caching is enabled, allowing you to run the scraper over multiple sessions without redownloading the same html pages.
+However, it does not check for duplicates, so remember to delete the data.csv file each time you run it.
